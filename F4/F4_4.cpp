@@ -6,7 +6,7 @@
 int main(){
   double sum=0,fatt;
   for (int k=0;k<=16;k++){
-    fatt = 1;
+    fatt = 1; //Attraverso questo metodo imposto fatt a 1 che va bene per k=0 e resetta ogni volta il valore
     for (int i=k;i>=1;i--){
       fatt*=i;
     }
