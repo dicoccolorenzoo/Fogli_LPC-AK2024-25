@@ -23,8 +23,10 @@ int main(){
     }
     while (a>=b);
     int metodo;
+    int n;
+    do {n=richiedi_tipo_funzione();} while(n<0||n>5);
     do {metodo=richiedi_metodo();} while(metodo!=1&&metodo!=2&&metodo!=3);
-    float soluzione=soluzione_metodo(a,b,metodo, richiedi_tipo_funzione());
+    float soluzione=soluzione_metodo(a,b,metodo, n);
     printf("La soluzione e': %f", soluzione);
 }
 
